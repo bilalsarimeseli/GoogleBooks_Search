@@ -1,3 +1,5 @@
+This is a new React-based Google Books Search app that incorporates React components, works with helper/util functions, and utilizes React lifecycle methods to query and displays books based on user searches. GoogleBooks_Search also uses Node, Express and MongoDB so that users can save books to review or purchase later.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

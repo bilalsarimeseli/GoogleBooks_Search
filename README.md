@@ -1,70 +1,56 @@
 This is a new React-based Google Books Search app that incorporates React components, works with helper/util functions, and utilizes React lifecycle methods to query and displays books based on user searches. GoogleBooks_Search also uses Node, Express and MongoDB so that users can save books to review or purchase later.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Google Books Search
 
-## Available Scripts
+### Overview
 
-In the project directory, you can run:
+React-based Google Books Search app. This SPA (Single Page Application) uses [`react-router-dom`]to navigate, hide and show your React components without changing the route within Express. Using helper/util functions and React lifecycle methods to query and display books based on user searches, this is a full MERN stack application allows users to save books to a database to refer to at a later date. Built with Node, Express and MongoDB, and React-Toastify for custom alerts. Toasty!
 
-### `npm start`
+### required npm packages
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`mongoose`, `axios`, `react-router-dom`, `react-toastify`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Database
 
-### `npm test`
+1. Connect to a MongoDB database named `googlebooks` using the mongoose npm package.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Using mongoose, create a Book schema.
 
-### `npm run build`
+3. Books should have each of the following fields:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `title` - Title of the book from the Google Books API
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* `authors` - The books's author(s) as returned from the Google Books API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `description` - The book's description as returned from the Google Books API
 
-### `npm run eject`
+* `image` - The Book's thumbnail image as returned from the Google Books API
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* `link` - The Book's information link as returned from the Google Books API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Example JSON:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```js
+    {
+      authors: ["Suzanne Collins"]
+      description: "Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature."
+      image: "http://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api"
+      title: "The Hunger Games"
+    }
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Technologies Implemented
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Bootstrap
+* Express
+* Node.js
+* React
+* MongoDB
+* Heroku
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Live site
 
-### Code Splitting
+* deployed: https://
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

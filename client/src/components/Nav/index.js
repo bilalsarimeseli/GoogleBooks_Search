@@ -4,9 +4,9 @@ import Jumbotron from "../Jumbotron";
 function Nav() {
   return (
     <div>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary" >
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" id="homeLink" href="/">
-        Google Books Search
+        Book React App
       </a>
      <ul className="navbar-nav">
      <li className="nav-item">

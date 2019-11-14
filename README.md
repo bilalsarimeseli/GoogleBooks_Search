@@ -50,6 +50,6 @@ React-based Google Books Search app. This SPA (Single Page Application) uses [`r
 
 ### Live site
 
-* deployed: https://lil-google-books-search.herokuapp.com/
+* deployed:
 
 
